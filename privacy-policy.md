@@ -7,10 +7,13 @@ omni2FA is a browser extension designed to generate two-factor authentication (2
 
 ## Data Collection and Storage
 
-### What We Collect
+### What We Store Locally
 - 2FA secret keys that you input or scan
 - Basic extension settings and preferences
 - No personal information is collected or required
+
+### What We Store Not-Locally
+- Nothing
 
 ### How Data is Stored
 - All sensitive data is encrypted using AES-GCM 256-bit encryption
@@ -53,7 +56,8 @@ The extension requires minimal permissions:
 - No plain text secrets are ever stored
 
 ### Export and Backup
-- Exported backup files contain encrypted data
+- Exported backup files contain the encrypted data in PLAIN TEXT
+- A warning of this decryption is provided during the export process
 - Users are responsible for securing their backup files
 - We recommend storing backups securely
 
@@ -92,12 +96,6 @@ To remove your data:
 2. Clear Chrome's storage data
 3. If using Chrome Sync, remove extension data from sync
 
-## Contact
-
-For privacy-related questions or concerns:
-- GitHub Issues: [Your GitHub Repository URL]
-- Email: [Your Contact Email]
-
 ## Recommendations for Users
 
 We recommend:
@@ -114,7 +112,3 @@ While we implement strong security measures, the security of your data also depe
 - Your computer's security
 - Your Chrome account's security (if using sync)
 - How you handle exported backup files
-
-## License
-
-This extension is open source and licensed under [Your License]. The source code is available for review at [Your GitHub Repository URL].
